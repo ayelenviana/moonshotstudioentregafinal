@@ -1,0 +1,40 @@
+.main__nosotros {
+  background-color: black;
+
+  .container {
+    max-width: 1440px;
+    margin: auto;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    video {
+      border-radius: 15px;
+    }
+
+    p {
+      width: 50%;
+      color: white;
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .container {
+      max-width: 300px;
+      padding: 50px 0;
+      min-height: 100vh;
+      justify-content: flex-start;
+      flex-direction: column;
+      video {
+        width: 100%;
+        border-radius: 15px;
+      }
+      p {
+        width: 100%;
+        padding: 50px 0;
+      }
+    }
+  }
+}
